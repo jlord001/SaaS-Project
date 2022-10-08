@@ -3,9 +3,9 @@
   --font-dark: #111215;
   --font-light: #677788;
   --font-brand: #3270ff;
-  --font-link: #2f6df9;
-  --bgcolor-light: rgba(248, 249, 255, 1);
-  --bgcolor-dark: #1e2b50
+  --font-link: #2476ff;
+  --bgcolor-light: #f8fafe;
+  --bgcolor-dark: #1e2b50;
 
   --size-10: 0.625rem;
   --size-12: 0.75rem;
@@ -58,15 +58,11 @@ a {
   text-decoration: none;
 }
 
-
 .container {
   width: 100%;
-  padding-left: 15px;
-  padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
 }
-
 
 .button-default {
   display: inline-block;
@@ -81,17 +77,26 @@ a {
   flex: none;
 }
 
-.button-main{
+.button-main {
   background-color: var(--font-link);
   font-size: var(--size-14);
   text-decoration: none;
   color: var(--white);
   font-weight: 700;
   padding: 0.75rem 1.313rem;
+  font-size: var(--size-12);
+  font-weight: 500;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 140px;
 }
 
-
-
+.button-main i {
+  padding-right: var(--size-12);
+  font-size: var(--size-20);
+  font-weight: 900;
+}
 
 @media (min-width: 768px) {
 }

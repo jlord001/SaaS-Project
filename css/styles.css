@@ -1,21 +1,13 @@
-/* .topbg {
-  background: linear-gradient(
-    286.73deg,
-    rgba(225, 231, 239, 0.5) 28.4%,
-    rgba(217, 217, 217, 0.19) 17.61%,
-    rgba(217, 217, 217, 0) 100%
-  );
-} */
-
-/* .topbg {
-  background: linear-gradient(170deg, transparent 80%, #fff 80%),
+.topbg {
+  background: linear-gradient(174deg, rgba(0, 0, 0, 0) 83%, white calc(83% + 2px)) no-repeat border-box,
     linear-gradient(
-      90deg,
-      rgba(217, 217, 217, 0) 17.61%,
-      rgba(217, 217, 217, 0.19) 80.85%,
-      rgba(225, 231, 239, 0.5) 80.85% 100%
-    );
-} */
+        286.73deg,
+        rgba(225, 231, 239, 0.5) 28.4%,
+        rgba(217, 217, 217, 0.19) 17.61%,
+        rgba(217, 217, 217, 0) 100%
+      )
+      no-repeat border-box;
+}
 
 .navbar {
   /* position: fixed; */
@@ -90,10 +82,12 @@
   margin-top: var(--size-100);
   font-weight: 500;
   font-size: var(--size-14);
-  padding-bottom: 10px;
+  padding-bottom: var(--size-10);
   display: flex;
   align-items: center;
   flex-wrap: wrap;
+  max-width: auto;
+  gap: var(--size-40);
 }
 
 .opening-wrapper h2 {
@@ -121,19 +115,6 @@
   font-weight: 500;
   font-size: var(--size-14);
   gap: var(--size-16);
-}
-
-.learn-more-wrapper .button-main {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 0.313;
-  font-size: var(--size-12);
-}
-
-.learn-more-wrapper i {
-  padding-right: var(--size-12);
-  font-size: var(--size-20);
 }
 
 .learn-more-wrapper span {
@@ -199,4 +180,175 @@
 
 .google-calendar {
   grid-area: 5 / 5 / 6 / 6;
+}
+
+.key-benefits h3,
+p {
+  text-align: center;
+}
+
+.key-benefits h3,
+h4 {
+  font-size: var(--size-30);
+  font-weight: 700;
+}
+
+.key-benefits p {
+  font-size: var(--size-16);
+  font-weight: 500;
+  color: var(--font-light);
+}
+
+.benefits-card-wrapper {
+  line-height: var(--size-20);
+  font-size: var(--size-14);
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(13.75rem, 1fr));
+  gap: var(--size-30);
+  width: 100%;
+}
+
+.benefits-card-wrapper div {
+  border: 1px solid #ffffff;
+  box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.15);
+  padding: var(--size-20);
+  display: flex;
+  flex-direction: column;
+  gap: var(--size-20);
+}
+
+.benefits-card-wrapper img {
+  width: var(--size-50);
+  height: var(--size-50);
+}
+
+.benefits-card-wrapper h4 {
+  font-size: var(--size-16);
+}
+
+.benefits-card-wrapper a {
+  color: var(--font-link);
+  font-weight: 700;
+}
+
+.key-benefits .highlight-card-wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0px;
+}
+
+.key-benefits .highlight-card-wrapper,
+.highlight-card-wrapper div {
+  gap: var(--size-12);
+  border: none;
+  box-shadow: none;
+}
+
+.highlight-card-wrapper .feature-button {
+  background-color: #01c9a7;
+  border-radius: var(--size-16);
+  padding: 0.188rem 0.938rem;
+  font-size: var(--size-12);
+  color: white;
+  font-weight: 500;
+  text-align: center;
+}
+
+.software-for-people {
+  margin-top: var(--size-100);
+}
+
+.people-wrapper {
+  background-color: var(--bgcolor-light);
+  max-width: auto;
+  display: flex;
+  gap: var(--size-10);
+  padding-top: 100px;
+  justify-content: center;
+}
+
+.people-wrapper > div:nth-child(1) {
+  margin-left: var(--size-30);
+}
+
+.why-front {
+  margin-top: 80px;
+}
+
+.why-front-text {
+  text-align: center;
+}
+
+.why-front-text h4 {
+  margin-bottom: 0px;
+}
+
+.why-front-text p {
+  font-size: var(--size-16);
+  line-height: var(--size-30);
+  font-weight: 500;
+  color: var(--font-light);
+  max-width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.why-front-bullets {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 0px var(--size-30);
+}
+
+.bullet-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: var(--size-30) 0px;
+  gap: var(--size-20);
+}
+
+.bullet-section span {
+  font-weight: 500;
+  font-size: var(--size-16);
+  line-height: var(--size-20);
+  text-align: center;
+}
+
+.bullet-section-graphics {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 4px;
+}
+
+.line {
+  width: var(--size-100);
+  height: 2px;
+  background-color: #e6e9f2;
+}
+
+.hidden-line {
+  background-color: transparent;
+}
+
+.bullet-circle-outter {
+  width: var(--size-50);
+  height: var(--size-50);
+  padding: var(--size-10);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #ecf2ff;
+  border-radius: 25px;
+}
+
+.bullet-circle-inner {
+  width: 6px;
+  height: 6px;
+  background-color: #0066ff;
+  border-radius: 3px;
 }
