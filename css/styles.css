@@ -272,6 +272,12 @@ h4 {
   margin-left: var(--size-30);
 }
 
+.why-front-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
 .why-front {
   margin-top: 80px;
 }
@@ -289,7 +295,7 @@ h4 {
   line-height: var(--size-30);
   font-weight: 500;
   color: var(--font-light);
-  max-width: 50%;
+  max-width: 600px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -298,6 +304,7 @@ h4 {
   display: flex;
   flex-direction: row;
   align-items: flex-start;
+  flex-wrap: wrap;
   padding: 0px var(--size-30);
 }
 
@@ -351,4 +358,236 @@ h4 {
   height: 6px;
   background-color: #0066ff;
   border-radius: 3px;
+}
+
+.video-banner {
+  margin-top: 80px;
+}
+
+.banner-wrapper {
+  height: 400px;
+  background-image: url(/assets/banners/banner_two.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.play-button {
+  padding: 10px 0px 10px 4px;
+  width: 80px;
+  height: 80px;
+  background-color: var(--white);
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
+  border-radius: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: var(--size-20);
+  font-weight: 900;
+}
+
+.template {
+  margin-top: 80px;
+}
+
+.template-wrapper {
+  display: flex;
+  flex-direction: row;
+  height: 550px;
+  flex-wrap: wrap;
+}
+
+.executive-container {
+  position: relative;
+  width: 452px;
+}
+
+.layer-background {
+  max-width: 200px;
+  left: 28px;
+  top: 111px;
+  position: relative;
+}
+
+.layer-picture {
+  position: absolute;
+  top: 0;
+  left: 81px;
+  width: 371px;
+  height: 425px;
+  z-index: 100;
+}
+
+.hubspot-text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: var(--size-30);
+  width: 512px;
+  margin-left: 50px;
+  margin-top: 70px;
+}
+
+.hubspot-text img {
+  width: var(--size-100);
+  height: var(--size-30);
+}
+
+.hubspot-text p {
+  font-weight: 500;
+  font-size: var(--size-20);
+  line-height: var(--size-30);
+  text-align: left;
+}
+
+.hubspot-text h5 {
+  font-weight: 700;
+  font-size: var(--size-18);
+  margin-bottom: 0;
+}
+
+.hubspot-text span {
+  font-weight: 700;
+  color: var(--font-light);
+  font-size: var(--size-14);
+}
+
+.brands-list-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 25px;
+  height: 210px;
+}
+
+.brands-list-wrapper h5 {
+  font-weight: 700;
+  font-size: 20px;
+  color: #5f6368;
+}
+
+.brands-icons {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: var(--size-100);
+  padding: 0px 30px;
+}
+
+.brands-icons img {
+  height: 40px;
+}
+
+.pricing-section {
+  margin-top: 35px;
+}
+
+.pricing-section-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+  height: 1030px;
+}
+
+.pricing-title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.pricing-title h3 {
+  font-weight: 700;
+  font-size: 26px;
+  text-align: center;
+  margin-bottom: 0px;
+}
+
+.pricing-title span {
+  font-weight: 500;
+  font-size: var(--size-16);
+  text-align: center;
+  color: var(--font-light);
+}
+
+.plan-feature {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 40px;
+  gap: 50px;
+  width: 370px;
+  border: 1px solid var(--white);
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+.plan-start {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.plan-head {
+  display: flex;
+  flex-direction: column;
+}
+
+.plan-pricing {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  gap: 7px;
+}
+
+.plan-pricing span {
+  font-weight: 500;
+  font-size: var(--size-50);
+}
+
+.price-container {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: flex-start;
+  padding: 0px 0px 14px;
+}
+
+.price-container span {
+  font-size: var(--size-20);
+  color: var(--font-light);
+  font-weight: 500;
+}
+
+.plan-break {
+  background-color: #8d8d8d;
+  height: 1px;
+  padding: 1px;
+}
+
+.plan-head-text {
+  font-weight: 500;
+  font-size: 16px;
+  color: var(--font-light);
+}
+
+.plan-foot {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.plan-foot span {
+  font-size: var(--size-12);
+  color: var(--font-light);
+}
+
+.plan-assets {
+  display: flex;
+  flex-direction: column;
+  gap: var(--size-10);
 }
