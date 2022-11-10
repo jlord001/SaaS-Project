@@ -57,6 +57,7 @@
   align-items: center;
   margin-left: auto;
   gap: var(--size-12);
+  margin-right: 50px;
 }
 
 .navbar-nav .button-main {
@@ -103,9 +104,12 @@
 
 .empowering-wrapper {
   flex: none;
-  order: 0;
   flex-grow: 1;
   align-self: stretch;
+}
+
+.empowering-wrapper p {
+  text-align: left;
 }
 
 .learn-more-wrapper {
@@ -126,6 +130,7 @@
   align-self: flex-start;
   order: 1;
   flex-grow: 1;
+  margin-right: 40px;
 }
 
 .company-logos {
@@ -182,6 +187,10 @@
   grid-area: 5 / 5 / 6 / 6;
 }
 
+.key-benefits {
+  margin-top: 150px;
+}
+
 .key-benefits h3,
 p {
   text-align: center;
@@ -197,6 +206,7 @@ h4 {
   font-size: var(--size-16);
   font-weight: 500;
   color: var(--font-light);
+  margin-bottom: 70px;
 }
 
 .benefits-card-wrapper {
@@ -214,7 +224,8 @@ h4 {
   padding: var(--size-20);
   display: flex;
   flex-direction: column;
-  gap: var(--size-20);
+  gap: 5px;
+  line-height: 25px;
 }
 
 .benefits-card-wrapper img {
@@ -231,11 +242,9 @@ h4 {
   font-weight: 700;
 }
 
-.key-benefits .highlight-card-wrapper {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  padding: 0px;
+.benefits-card-wrapper span {
+  margin-bottom: 10px;
+  margin-right: 18px;
 }
 
 .key-benefits .highlight-card-wrapper,
@@ -243,16 +252,24 @@ h4 {
   gap: var(--size-12);
   border: none;
   box-shadow: none;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  padding: 0px;
 }
 
 .highlight-card-wrapper .feature-button {
   background-color: #01c9a7;
   border-radius: var(--size-16);
-  padding: 0.188rem 0.938rem;
-  font-size: var(--size-12);
+  padding: 5px 12px;
   color: white;
   font-weight: 500;
   text-align: center;
+}
+
+.highlight-card-wrapper .feature-button span {
+  margin: 0;
+  line-height: normal;
 }
 
 .software-for-people {
@@ -396,7 +413,8 @@ h4 {
 .template-wrapper {
   display: flex;
   flex-direction: row;
-  height: 550px;
+  margin-bottom: 200px;
+  justify-content: space-between;
 }
 
 .executive-container {
@@ -476,6 +494,8 @@ h4 {
   gap: var(--size-100);
   width: 100%;
   flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
 }
 
 .brands-icons img {
@@ -646,6 +666,7 @@ h4 {
 .hire-us-wrapper {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   gap: 120px;
   padding: 0px;
   background-color: #20335b;
@@ -763,6 +784,7 @@ h4 {
   display: flex;
   flex-direction: column;
   padding: 30px;
+  width: 50%;
 }
 
 .hire-us-right form {
@@ -799,8 +821,6 @@ h4 {
 .formBox input,
 textarea {
   border: 1px solid transparent;
-  width: 180px;
-  height: 30px;
 }
 
 .formBox textarea {
@@ -899,6 +919,25 @@ textarea {
 
 .footer-links ul li {
   margin-bottom: 10px;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.footer-links .hiring-badge {
+  padding: 2px 4px;
+  background-color: var(--font-link);
+  border-radius: 3px;
+  color: white;
+  font-size: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-wrapper .highlight-link {
+  color: var(--font-link);
 }
 
 .footer-break {
@@ -953,6 +992,26 @@ textarea {
 
 .social-links div i {
   color: var(--font-light);
+}
+
+.social-links .alternate-social-icon {
+  background-color: var(--font-light);
+}
+
+.social-links .alternate-social-icon i {
+  color: #ecf2ff;
+}
+
+.social-links .fake-country-selector {
+  width: 168px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.social-links .fake-country-selector img {
+  width: 14px;
+  height: 14px;
 }
 
 .copyright {
