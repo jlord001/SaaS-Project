@@ -19,9 +19,9 @@
     <script src="https://kit.fontawesome.com/0be43d051d.js" crossorigin="anonymous"></script>
   </head>
   <body>
-    <div class="topbg container">
+    <div class="topbg"> 
       <!-- Navigation Bar -->
-      <nav id="topNav" class="navbar">
+      <nav id="topNav" class="navbar nav">
         <div class="container">
           <button class="navbar-toggler" aria-expanded="false" aria-controls="navbarDropdown">
             <span>&#9776;</span>
@@ -39,9 +39,8 @@
           </ul>
         </div>
       </nav>
-
-      <!-- opening banner -->
-      <section>
+     <!-- opening banner -->
+      <section class="opening-banner">
         <div class="container">
           <div class="opening-wrapper">
             <div class="empowering-wrapper">
@@ -353,8 +352,8 @@
 
             <div class="hire-us-left-collage">
               <img src="./assets/people/woman_two.jpg" alt="person-icon">
-              <img src="./assets/people/woman_one.jpg" alt="person-icon">
               <img class="bigger-pic" src="./assets/people/man_one.jpg" alt="person-icon">
+              <img src="./assets/people/woman_one.jpg" alt="person-icon">
             </div>
           </div>
 
@@ -517,6 +516,15 @@
       </div>
     </section>
     <script>
+      const nav = document.getElementById("topNav");
+      window.onscroll = function () {
+        if (window.pageYOffset > 100) {
+          nav.classList.add("sticky");
+        } else {
+          nav.classList.remove("sticky");
+        }
+      };
+
       const navButton = document.querySelector("button[aria-expanded]");
 
       function toggleNav({ target }) {

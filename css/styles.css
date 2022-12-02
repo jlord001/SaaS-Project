@@ -1,23 +1,18 @@
-.topbg {
-  background: linear-gradient(174deg, rgba(0, 0, 0, 0) 83%, white calc(83% + 2px)) no-repeat border-box,
-    linear-gradient(
-        286.73deg,
-        rgba(225, 231, 239, 0.5) 28.4%,
-        rgba(217, 217, 217, 0.19) 17.61%,
-        rgba(217, 217, 217, 0) 100%
-      )
-      no-repeat border-box;
-}
-
 .navbar {
-  /* position: fixed; */
+  position: fixed;
   top: 0;
   right: 0;
   left: 0;
-  z-index: 500;
   transition: ease-in-out 0.3s;
   padding-top: var(--size-30);
   height: var(--size-100);
+  background-color: transparent;
+  z-index: 800;
+}
+
+.navbar.sticky {
+  background-color: white;
+  box-shadow: 0px 0px 20px rgba(48, 63, 100, 0.2);
 }
 
 .navbar .container div {
@@ -77,6 +72,24 @@
   line-height: 1.25rem;
   font-weight: 500;
   font-size: var(--size-14);
+}
+
+.topbg {
+  background-image: linear-gradient(
+      356deg,
+      #ffffff 21%,
+      rgba(254, 254, 254, 0.75) 21%,
+      rgba(253, 252, 253, 0.5) 21%,
+      rgba(248, 250, 252, 0) 21%
+    ),
+    linear-gradient(
+      127deg,
+      rgba(250, 250, 250, 0.93) 69%,
+      rgba(252, 252, 252, 0.95) 38%,
+      #ffffff 0%,
+      rgba(251, 251, 251, 0.97) 19%,
+      rgba(242, 242, 242, 0.91) 57%
+    );
 }
 
 .opening-wrapper {
@@ -161,8 +174,9 @@
 }
 
 .atlassian {
-  grid-area: 1 / 2 / 2 / 3;
-  justify-self: right;
+  grid-area: 1 / 3 / 3 / 4;
+  justify-self: left;
+  margin-top: 20px;
 }
 
 .asana {
@@ -176,11 +190,13 @@
 
 .weave {
   grid-area: 3 / 4 / 4 / 5;
+  justify-self: left;
 }
 
 .googleA {
-  grid-area: 5 / 2 / 6 / 3;
+  grid-area: 4 / 2 / 6 / 3;
   justify-self: left;
+  margin-top: 30px;
 }
 
 .google-calendar {
