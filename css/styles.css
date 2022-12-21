@@ -944,9 +944,24 @@ h4 {
   align-items: center;
 }
 
+.formBox input {
+  width: 100%;
+  line-height: 23px;
+}
+
+[list]::-webkit-calendar-picker-indicator {
+  opacity: 0;
+}
+
 .formBox input,
 textarea {
   border: 1px solid transparent;
+}
+
+.formBox input:focus,
+textarea:focus,
+select:focus {
+  outline: none;
 }
 
 .formBox i {
