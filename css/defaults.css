@@ -90,6 +90,11 @@ a {
   font-weight: 900;
 }
 
+.break {
+  height: 1px;
+  background: #e6e9f2;
+}
+
 @media (min-width: 768px) {
   .container {
     max-width: 765;
