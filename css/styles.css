@@ -93,7 +93,7 @@
 }
 
 .opening-wrapper {
-  margin-top: var(--size-100);
+  margin-top: var(--size-50);
   font-weight: 500;
   font-size: var(--size-14);
   padding-bottom: var(--size-10);
@@ -101,7 +101,7 @@
   align-items: center;
   flex-wrap: wrap;
   max-width: auto;
-  gap: var(--size-40);
+  gap: var(--size-50);
 }
 
 .opening-wrapper h2 {
@@ -144,7 +144,8 @@
   align-self: flex-start;
   order: 1;
   flex-grow: 1;
-  margin-right: 40px;
+  margin-right: 50px;
+  margin-left: 50px;
 }
 
 .company-logos {
@@ -311,6 +312,7 @@ h4 {
   flex-direction: column;
   gap: 5px;
   line-height: 25px;
+  height: 100%;
 }
 
 .benefits-card-wrapper img {
@@ -338,6 +340,7 @@ h4 {
 .benefits-card-wrapper .benefits-learn-more {
   color: var(--font-link);
   font-weight: 700;
+  margin-top: auto;
 }
 
 .benefits-card-wrapper .benefits-learn-more i {
@@ -353,6 +356,7 @@ h4 {
   align-items: center;
   flex-direction: row;
   padding: 0px;
+  height: auto;
 }
 
 .highlight-card-wrapper .feature-button {
@@ -361,6 +365,7 @@ h4 {
   padding: 5px 12px;
   font-weight: 500;
   text-align: center;
+  height: auto;
 }
 
 .highlight-card-wrapper .feature-button span {
@@ -407,14 +412,14 @@ h4 {
   box-shadow: -4px -3px 14px rgb(0 0 0 / 7%);
 }
 
+.why-front {
+  margin-top: 80px;
+}
+
 .why-front-wrapper {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-}
-
-.why-front {
-  margin-top: 80px;
 }
 
 .why-front-text {
@@ -439,8 +444,6 @@ h4 {
   display: flex;
   flex-direction: row;
   align-items: flex-start;
-  flex-wrap: wrap;
-  padding: 0px var(--size-30);
 }
 
 .bullet-section {
