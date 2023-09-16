@@ -1,0 +1,18 @@
+{
+	"folders": [
+		{
+			"path": "../Devslopes"
+		},
+		{
+			"name": "SaaS-Project",
+			"path": "."
+		},
+		{
+			"name": "component_library",
+			"path": "../component_library"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "SaaS-Project"
+	}
+}
