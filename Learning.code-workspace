@@ -4,15 +4,15 @@
 			"path": "../Devslopes"
 		},
 		{
-			"name": "SaaS-Project",
-			"path": "."
-		},
-		{
 			"name": "component_library",
 			"path": "../component_library"
+		},
+		{
+			"name": "css-checkout-page-unsolved",
+			"path": "../Devslopes/css-checkout-page-unsolved"
 		}
 	],
 	"settings": {
-		"liveServer.settings.multiRootWorkspaceName": "SaaS-Project"
+		"liveServer.settings.multiRootWorkspaceName": "Devslopes"
 	}
 }
